@@ -103,8 +103,12 @@ class _BenchmarkPageState extends State<BenchmarkPage> {
       Session.aesCipher = AESCipher(
         Session.secretKey,
         CipherParameters(
-          BlockCipherMode.CBC,
-          PlainTextPadding.PKCS5,
+          // CBC mode
+          //BlockCipherMode.CBC,
+          //PlainTextPadding.PKCS5,
+          // GCM mode
+          BlockCipherMode.GCM,
+          PlainTextPadding.None,
         ),
       );
     }

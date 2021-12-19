@@ -133,8 +133,10 @@ class _CipherPageState extends State<CipherPage> {
       Session.aesCipher = AESCipher(
         Session.secretKey,
         CipherParameters(
-          BlockCipherMode.CBC,
-          PlainTextPadding.PKCS5,
+          //BlockCipherMode.CBC,
+          BlockCipherMode.GCM,
+          //PlainTextPadding.PKCS5,
+          PlainTextPadding.None,
         ),
       );
     }

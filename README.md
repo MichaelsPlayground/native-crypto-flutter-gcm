@@ -1,3 +1,41 @@
+// source: https://github.com/hugo-pcl/native-crypto-flutter
+
+AES CBC Benchmark on Macbook pro iOS 15
+```plaintext
+Benchmark 2/4/8/16/32/64/128/256MB
+[2 MB] Encryption took 6 ms
+[2 MB] Encoding took 8 ms
+[2 MB] Decryption took 6 ms
+[4 MB] Encryption took 10 ms
+[4 MB] Encoding took 3 ms
+[4 MB] Decryption took 8 ms
+[8 MB] Encryption took 26 ms
+[8 MB] Encoding took 11 ms
+[8 MB] Decryption took 21 ms
+[16 MB] Encryption took 42 ms
+[16 MB] Encoding took 13 ms
+[16 MB] Decryption took 36 ms
+[32 MB] Encryption took 97 ms
+[32 MB] Encoding took 17 ms
+[32 MB] Decryption took 99 ms
+[64 MB] Encryption took 198 ms
+[64 MB] Encoding took 40 ms
+[64 MB] Decryption took 170 ms
+[128 MB] Encryption took 394 ms
+[128 MB] Encoding took 47 ms
+[128 MB] Decryption took 374 ms
+[256 MB] Encryption took 818 ms
+[256 MB] Encoding took 155 ms
+[256 MB] Decryption took 634 ms
+Benchmark finished.
+Generated, encrypted and decrypted 510 MB in 3288 ms
+```
+
+AES GCM benchmark on Macbook pro iOS 15
+```plaintext
+
+```
+
 # NativeCrypto for Flutter
 
 ![NativeCrypto Logo](/assets/native_crypto.png)
