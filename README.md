@@ -33,7 +33,7 @@ Generated, encrypted and decrypted 510 MB in 3288 ms
 
 AES GCM benchmark on Macbook pro iOS 15
 ```plaintext
-
+no AES GCM on IOS available
 ```
 
 # NativeCrypto for Flutter

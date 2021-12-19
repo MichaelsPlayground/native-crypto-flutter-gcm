@@ -45,6 +45,8 @@ class AESCipher implements Cipher {
   @override
   List<CipherParameters> get supportedParameters => [
         CipherParameters(BlockCipherMode.CBC, PlainTextPadding.PKCS5),
+        // ### new will throw an error on IOS as it is not availble
+        //CipherParameters(BlockCipherMode.GCM, PlainTextPadding.None),
       ];
 
   /// Creates an AES cipher with specified secretKey and mode/padding
